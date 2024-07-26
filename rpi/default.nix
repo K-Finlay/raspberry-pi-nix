@@ -312,10 +312,10 @@ in
     boot = {
       initrd.availableKernelModules = [
         "usbhid"
-        "usb_storage"
+        # "usb_storage"
         "vc4"
         # "pcie_brcmstb" # required for the pcie bus to work
-        "reset-raspberrypi" # required for vl805 firmware to load
+        # "reset-raspberrypi" # required for vl805 firmware to load
       ];
       # This pin is not necessary, it would be fine to replace it with
       # `kernel`. It is helpful to ensure
