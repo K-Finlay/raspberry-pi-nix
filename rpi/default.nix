@@ -320,7 +320,8 @@ in
       # This pin is not necessary, it would be fine to replace it with
       # `kernel`. It is helpful to ensure
       # cache hits for kernel builds though.
-      kernelPackages = pkgs.linuxPackagesFor kernel;
+      # kernelPackages = pkgs.linuxPackagesFor kernel;
+      kernelPackages = pkgs.linuxPackages.linux_rpi3;
       loader = {
         grub.enable = lib.mkDefault false;
         initScript.enable = !cfg.uboot.enable;
