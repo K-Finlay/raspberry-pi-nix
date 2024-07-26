@@ -314,7 +314,7 @@ in
         "usbhid"
         "usb_storage"
         "vc4"
-        "pcie_brcmstb" # required for the pcie bus to work
+        # "pcie_brcmstb" # required for the pcie bus to work
         "reset-raspberrypi" # required for vl805 firmware to load
       ];
       # This pin is not necessary, it would be fine to replace it with
