@@ -321,7 +321,7 @@ in
       # `kernel`. It is helpful to ensure
       # cache hits for kernel builds though.
       # kernelPackages = pkgs.linuxPackagesFor kernel;
-      kernelPackages = pkgs.linuxPackages.linux_rpi3;
+      kernelPackages = pkgs.linuxKernel.kernels.linux_rpi3;
       loader = {
         grub.enable = lib.mkDefault false;
         initScript.enable = !cfg.uboot.enable;
