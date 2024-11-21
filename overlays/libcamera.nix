@@ -12,7 +12,7 @@ final: prev: {
     name = "libpisp";
     version = "1.0.7";
     src = libpisp-src;
-    nativeBuildInputs = with final; [ pkg-config meson ninja ];
+    nativeBuildInputs = with final; [ buildPackages.pkg-config buildPackages.meson buildPackages.ninja ];
     buildInputs = with final; [ nlohmann_json boost ];
     # Meson is no longer able to pick up Boost automatically.
     # https://github.com/NixOS/nixpkgs/issues/86131
